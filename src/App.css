@@ -1,0 +1,93 @@
+body {
+  font-family: arial, 'sans-serif';
+  font-size: 14px;
+}
+
+.link {
+    padding: 8px 10px;
+    border-radius: 3px;
+}
+
+.link:hover {
+    background: rgba(0, 0, 0, .1);
+}
+
+.wrapper {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 5px 20px;
+  border-radius: 2px;
+  margin-top: 20px;
+  background: rgba(128, 128, 128, .1);
+}
+
+.missionList {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+.missionContainer {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.thumbnail {
+  text-align: center;
+}
+
+.thumbnail img {
+  vertical-align: bottom;
+  width: 200px;
+}
+
+.filters {
+  background: #fff;
+  border: 1px solid #ccc;
+  flex: 250px 0;
+  padding: 1rem;
+}
+
+.container {
+  flex: 1 0;
+}
+
+.filterContainer ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.filterContainer h3 {
+  border-bottom: 1px solid #ccc;
+  padding: 0.5rem 0;
+}
+
+.filterContainer button {
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+
+.filterContainer button.active {
+  background: #4CAF50;
+  border: 1px solid transparent;
+}
+
+@media only screen and (min-width: 760px) {
+  .wrapper {
+    display: flex;
+  }
+  .missionContainer {
+    margin: 0.5rem;
+    width: auto;
+  }
+  .filters {
+    margin: 0.5rem;
+  }
+}
