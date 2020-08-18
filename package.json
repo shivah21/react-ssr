@@ -3,11 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "webpack.config.js",
+  "engines": {
+    "yarn": "^1.22.0"
+  },
   "scripts": {
     "build": "webpack --progress",
     "dev": "npm-run-all --parallel server client",
     "server": "nodemon index.js",
-	"start": "node index.js",
+    "start": "node index.js",
     "client": "webpack --watch --progress",
     "linter": "eslint src",
     "bundlesize": "bundlesize",
@@ -35,7 +38,6 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.3.13",
     "babel-register": "^6.26.0",
-    "bundlesize": "^0.16.0",
     "css-loader": "^3.0.0",
     "enzyme": "^3.2.0",
     "enzyme-adapter-react-16": "^1.1.0",
@@ -58,9 +60,6 @@
     "webpack-cli": "^3.3.2",
     "webpack-dev-server": "^3.0.0"
   },
-"engines": {
-    "node": "^12.0.0"
-},
   "browserslist": [
     "> 1%",
     "last 2 versions",

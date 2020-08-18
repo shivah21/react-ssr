@@ -37927,7 +37927,7 @@ var normalizeMissionData = function normalizeMissionData(missions) {
             missionIds: mission.mission_id,
             launchYear: mission.launch_year,
             successfulLaunch: "" + mission.launch_success,
-            successfulLanding: "" + mission.rocket.first_stage.cores[0].land_success,
+            successfulLanding: "" + (mission.rocket.first_stage.cores[0].land_success || false),
             thumbnail: mission.links.mission_patch_small || mission.links.mission_patch
         };
     }) : [];
