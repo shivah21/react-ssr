@@ -11,6 +11,5 @@ require( "babel-register" )( {
         "dynamic-import-node",
     ],
 } );
-const server = require( "./src/server" );
 
-module.exports = server;
+module.exports = require( "./src/server.js" );
