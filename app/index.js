@@ -1,5 +1,5 @@
 require( "babel-register" )( {
-    presets: [ "env" ],
+    presets: [ "../env" ],
     plugins: [
         [
             "css-modules-transform",
@@ -10,5 +10,5 @@ require( "babel-register" )( {
         ],
         "dynamic-import-node",
     ],
-} );
+});
 require( "../src/server" );
