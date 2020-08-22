@@ -45,7 +45,7 @@ app.get( "/*", ( req, res ) => {
     } );
 } );
 
-app.listen( process.env.PORT || 3000 );
+app.listen( process.env.PORT || 9000 );
 
 function htmlTemplate( reactDom, reduxState, helmetData ) {
     return `
@@ -65,8 +65,10 @@ function htmlTemplate( reactDom, reduxState, helmetData ) {
             <script>
                 window.REDUX_DATA = ${ serialize( reduxState, { isJSON: true } ) }
             </script>
-            <script src="./app.bundle.js"></script>
+            <script type="module" src="./app.bundle.js"></script>
         </body>
         </html>
     `;
 }
+
+module.exports = app;

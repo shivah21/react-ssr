@@ -1,8 +1,12 @@
 const dev = process.env.NODE_ENV !== "production";
-const path = require( "path" );
+const path = require("path");
+// import path from "path";
 const { BundleAnalyzerPlugin } = require( "webpack-bundle-analyzer" );
+// import BundleAnalyzerPlugin from "webpack-bundle-analyzer";
 const FriendlyErrorsWebpackPlugin = require( "friendly-errors-webpack-plugin" );
+// import FriendlyErrorsWebpackPlugin from "friendly-errors-webpack-plugin";
 const MiniCssExtractPlugin = require( "mini-css-extract-plugin" );
+// import MiniCssExtractPlugin from "mini-css-extract-plugin";
 
 const plugins = [
     new FriendlyErrorsWebpackPlugin(),
