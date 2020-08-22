@@ -17,6 +17,7 @@
     "precommit": "eslint src --quiet"
   },
   "dependencies": {
+    "babel-register": "^6.26.0",
     "isomorphic-fetch": "^2.2.1",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
